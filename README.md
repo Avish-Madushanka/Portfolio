@@ -1,2 +1,2 @@
-# Portfolio
-Hi there! This is my personal portfolio website
+# Personal-Portfolio
+My personal portfolio developed using HTML, CSS and JS
