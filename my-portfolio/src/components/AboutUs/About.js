@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './About.css';
-import aboutImage from '../assets/images/abouti.png';
+import aboutImage from '../../assets/images/abouti.png';
 
 const About = () => {
   useEffect(() => {

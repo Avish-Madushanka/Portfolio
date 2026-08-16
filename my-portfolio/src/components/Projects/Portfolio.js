@@ -11,14 +11,14 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       categories: ['ui'],
-      image: require('../assets/images/reader.jpeg'),
+      image: require('../../assets/images/reader.jpeg'),
       title: 'MR Cheers - Liquor Store Mobile App',
       description: 'Designed using Figma',
       link: 'https://www.behance.net/gallery/177788563/Liquor-Store-Mobile-App-UI-Design'
     },
     {
       categories: ['ui', 'other'],
-      image: require('../assets/images/bakery.jpeg'),
+      image: require('../../assets/images/bakery.jpeg'),
       title: 'Bakery Management System',
       description: 'Designed and Developed using Visual Studio Winforms(C#)',
       link: 'https://www.behance.net/gallery/177702299/Bakery-Management-System',
@@ -26,35 +26,35 @@ const Portfolio = () => {
     },
     {
       categories: ['web'],
-      image: require('../assets/images/drivex.jpeg'),
+      image: require('../../assets/images/drivex.jpeg'),
       title: 'Drivex Automobile Website',
       description: 'Developed using HTML, CSS, JS, Bootstrap and PHP',
       link: '#'
     },
     {
       categories: ['web'],
-      image: require('../assets/images/futurehome.png'),
+      image: require('../../assets/images/futurehome.png'),
       title: 'Future Homes Construction Website',
       description: 'Developed using HTML, CSS, JS, Bootstrap and PHP',
       link: 'https://futurehomesengineering.github.io/website/'
     },
     {
       categories: ['ui'],
-      image: require('../assets/images/onoff.png'),
+      image: require('../../assets/images/onoff.png'),
       title: 'On/Off Toggle Button',
       description: 'Designed using Figma',
       link: 'https://www.behance.net/gallery/177624847/OnOff-Toggle-Button'
     },
     {
       categories: ['flyers'],
-      image: require('../assets/images/ass1.jpeg'),
+      image: require('../../assets/images/ass1.jpeg'),
       title: 'Assignment Writing Service',
       description: 'Flyer designed for AviOniks using Figma',
       link: 'https://www.behance.net/gallery/177634611/Assignment-Writing-Advertisement'
     },
     {
       categories: ['flyers'],
-      image: require('../assets/images/ass2.jpeg'),
+      image: require('../../assets/images/ass2.jpeg'),
       title: 'Assignment Writing Service',
       description: 'Flyer designed for AviOniks using Figma',
       link: 'https://www.behance.net/gallery/177633967/Assignment-Writing-Advertisement'

@@ -26,12 +26,12 @@ const Header = ({ activeSection }) => {
     { href: '#about', label: 'About' },
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#contact', label: 'Contact' }
+    { href: '#contact', label: 'Contact Me' }
   ];
 
   return (
     <header className={`header ${isSticky ? 'sticky' : ''}`}>
-      <a href="#home" className="logo">Avish</a>
+      <a href="#home" className="logo">Avish Madhushanka</a>
       <i className='bx bx-menu' id="menu-icon" onClick={toggleMenu}></i>
       <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
         {navLinks.map(link => (

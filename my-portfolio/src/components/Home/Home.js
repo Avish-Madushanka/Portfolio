@@ -2,13 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
 import './Home.css';
-import homeImage from '../assets/images/grouppp.png';
+import homeImage from '../../assets/images/grouppp.png';
 
 const Home = () => {
   const typedRef = useRef(null);
 
   useEffect(() => {
-    // Typed.js initialization
     const options = {
       strings: ['Developer', 'UI/UX Designer', 'Freelancer'],
       typeSpeed: 60,
@@ -19,7 +18,6 @@ const Home = () => {
     
     typedRef.current = new Typed('.multiple-text', options);
 
-    // ScrollReveal initialization
     ScrollReveal({
       distance: '80px',
       duration: 2000,
@@ -61,7 +59,7 @@ const Home = () => {
             </a>
           ))}
         </div>
-        <a href="https://drive.google.com/file/d/1AfrChgjP4NggPqcmIiMHKcI5KReuA9lF/view?usp=drivesdk" className="btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://docs.google.com/document/d/1UUXcduLOJWwe6C7KYmiPuL7-nbD-hx0D/edit?usp=drive_link&ouid=117722448731003631444&rtpof=true&sd=true" className="btn" target="_blank" rel="noopener noreferrer">
           Download CV
         </a>
       </div>

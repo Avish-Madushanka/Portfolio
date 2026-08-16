@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import 'boxicons/css/boxicons.min.css';
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import About from './components/AboutUs/About';
+import Services from './components/Services/Services';
+import Portfolio from './components/Projects/Portfolio';
+import Contact from './components/ContactUs/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
