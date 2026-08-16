@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
 import './Home.css';
-import homeImage from '../../assets/images/grouppp.png';
+import homeImage from '../../assets/images/avish1.png';
 
 const Home = () => {
   const typedRef = useRef(null);
