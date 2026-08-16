@@ -1,0 +1,142 @@
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 3rem;
+}
+
+.filter-buttons {
+  margin: 2rem;
+  text-align: center;
+}
+
+.filter-buttons .btnp {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-left: 1.3rem;
+}
+
+.filter-buttons .btnp.active {
+  box-shadow: 0 0 1rem var(--main-color);
+  background: var(--main-color);
+  color: var(--second-bg-color);
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.port-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #292e33;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  height: 220px;
+}
+
+.port-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.port-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.port-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0.4rem;
+}
+
+.port-box:hover .port-content {
+  opacity: 1;
+  background-color: rgba(0, 238, 255, 0.5);
+  backdrop-filter: blur(20px);
+}
+
+.port-box:hover .port-image img {
+  transform: scale(1.1);
+}
+
+.port-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  color: black;
+}
+
+.port-content p {
+  font-size: 1.4rem;
+  margin: 0;
+  color: black;
+  font-weight: 600;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.icon-circle {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-bg-color);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.icon-circle i {
+  font-size: 1.7rem;
+  color: var(--text-color);
+}
+
+.icon-circle:hover {
+  background-color: rgba(250, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+}
+
+@media (max-width: 768px) {
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+  }
+}

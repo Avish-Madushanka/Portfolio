@@ -1,0 +1,46 @@
+.contact {
+  min-height: 60vh;
+  padding: 10rem 9% 1rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact p {
+  font-size: 1.8rem;
+}
+
+.contact .social-media {
+  margin-top: 2rem;
+}
+
+.contact .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.contact .social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    min-height: auto;
+  }
+}
