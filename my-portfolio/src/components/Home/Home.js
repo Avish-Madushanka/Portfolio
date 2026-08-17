@@ -3,7 +3,6 @@ import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
 import './Home.css';
 import homeImage from '../../assets/images/avish1.png';
-import cvPDF from '../../assets/images/AvishCV.pdf'; 
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -37,41 +36,13 @@ const Home = () => {
     };
   }, []);
 
-  const socialLinks = [
-    { href: 'https://www.linkedin.com/in/avish-madushanka-640172248', icon: 'bxl-linkedin' },
-    { href: 'mailto:avishmadushanka21@gmail.com', icon: 'bx-envelope' },
-    { href: 'https://github.com/Avish-Madushanka', icon: 'bxl-github' },
-    { href: 'https://www.behance.net/avishmadushanka', icon: 'bxl-behance' },
-    { href: 'https://www.facebook.com/avish.madushanka.5?mibextid=ZbWKwL', icon: 'bxl-facebook' },
-    { href: 'https://instagram.com/avish_madushanka?igshid=OGQ5ZDc2ODk2ZA==', icon: 'bxl-instagram-alt' }
-  ];
-
-  const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = cvPDF;
-    link.download = 'Avish_Madushanka_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section className="home" id="home">
       <div className="home-content">
         <h3>Hello, It's Me,</h3>
         <h1>Avish Madhushanka</h1>
         <h3>And I'm a <span className="multiple-text"></span></h3>
-        <p>Hey there! I thrive on curiosity and love to dive into new things, always eager to learn about the latest trends and innovative ideas in the ever-evolving tech landscape.</p>
-        <div className="social-media">
-          {socialLinks.map((link, index) => (
-            <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
-              <i className={`bx ${link.icon}`}></i>
-            </a>
-          ))}
-        </div>
-        <button onClick={handleDownloadCV} className="btn">
-          Download CV
-        </button>
+        <p>I believe technology is the art of solving problems creatively. With a relentless curiosity and a passion for learning, I dive deep into new technologies, always seeking to understand, innovate, and build solutions that make a difference.</p>
       </div>
       <div className="home-img">
         <img src={homeImage} alt="Avish Madushanka" />
