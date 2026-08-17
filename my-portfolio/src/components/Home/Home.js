@@ -3,6 +3,7 @@ import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
 import './Home.css';
 import homeImage from '../../assets/images/avish1.png';
+import cvPDF from '../../assets/images/AvishCV.pdf'; 
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -45,11 +46,20 @@ const Home = () => {
     { href: 'https://instagram.com/avish_madushanka?igshid=OGQ5ZDc2ODk2ZA==', icon: 'bxl-instagram-alt' }
   ];
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = cvPDF;
+    link.download = 'Avish_Madushanka_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Avish Madushanka</h1>
+        <h3>Hello, It's Me,</h3>
+        <h1>Avish Madhushanka</h1>
         <h3>And I'm a <span className="multiple-text"></span></h3>
         <p>Hey there! I thrive on curiosity and love to dive into new things, always eager to learn about the latest trends and innovative ideas in the ever-evolving tech landscape.</p>
         <div className="social-media">
@@ -59,9 +69,9 @@ const Home = () => {
             </a>
           ))}
         </div>
-        <a href="https://docs.google.com/document/d/1UUXcduLOJWwe6C7KYmiPuL7-nbD-hx0D/edit?usp=drive_link&ouid=117722448731003631444&rtpof=true&sd=true" className="btn" target="_blank" rel="noopener noreferrer">
+        <button onClick={handleDownloadCV} className="btn">
           Download CV
-        </a>
+        </button>
       </div>
       <div className="home-img">
         <img src={homeImage} alt="Avish Madushanka" />

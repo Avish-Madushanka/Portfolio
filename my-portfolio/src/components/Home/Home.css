@@ -25,14 +25,16 @@
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--text-color);
+  margin-bottom: 15px;
 }
 
 .home-content h1 {
-  font-size: 5.6rem;
+  font-size: 6rem;
+  width: 1000px;
   font-weight: 700;
   line-height: 1.1;
   margin: 1.5rem 0;
-  color: var(--text-color);
+  color: #ffffff;
 }
 
 .home-content p {
@@ -40,6 +42,10 @@
   color: #a1a1a1;
   line-height: 1.6;
   margin-bottom: 2rem;
+}
+
+.multiple-text {
+  color: #e6e20f;
 }
 
 .social-media {
