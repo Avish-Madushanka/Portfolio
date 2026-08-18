@@ -16,18 +16,21 @@ const Home = () => {
       loop: true
     };
     
-    typedRef.current = new Typed('.multiple-text', options);
+    typedRef.current = new Typed('.Hom-multiple-text', options);
 
-    ScrollReveal({
+    ScrollReveal().reveal('.Hom-content', {
+      origin: 'top',
       distance: '80px',
       duration: 2000,
       delay: 200
     });
-
-    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-    ScrollReveal().reveal('.home-img, .services-container, .port-box, .filter-buttons, .contact form', { origin: 'bottom' });
-    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+    
+    ScrollReveal().reveal('.Hom-img', {
+      origin: 'bottom',
+      distance: '80px',
+      duration: 2000,
+      delay: 300
+    });
 
     return () => {
       if (typedRef.current) {
@@ -37,14 +40,14 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="home" id="home">
-      <div className="home-content">
+    <section className="Hom-home" id="home">
+      <div className="Hom-content">
         <h3>Hello, It's Me,</h3>
         <h1>Avish Madhushanka</h1>
-        <h3>And I'm a <span className="multiple-text"></span></h3>
+        <h3>And I'm a <span className="Hom-multiple-text"></span></h3>
         <p>I believe technology is the art of solving problems creatively. With a relentless curiosity and a passion for learning, I dive deep into new technologies, always seeking to understand, innovate, and build solutions that make a difference.</p>
       </div>
-      <div className="home-img">
+      <div className="Hom-img">
         <img src={homeImage} alt="Avish Madushanka" />
       </div>
     </section>
