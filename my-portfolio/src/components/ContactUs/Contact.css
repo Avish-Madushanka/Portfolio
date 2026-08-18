@@ -1,46 +1,435 @@
-.contact {
-  min-height: 60vh;
-  padding: 10rem 9% 1rem;
+.Con-contact {
+  min-height: 80vh;
+  padding: 10rem 9% 4rem;
+  background: #0e0e0e;
+  position: relative;
+  overflow: hidden;
 }
 
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
+.Con-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.Con-heading {
+  font-size: 5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
 
-.contact p {
+.Con-heading span {
+  color: #e6e20f;
+  text-shadow: 0 0 30px rgba(230, 226, 15, 0.3);
+}
+
+.Con-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.Con-text {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Con-subtitle {
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.Con-description {
   font-size: 1.8rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
 }
 
-.contact .social-media {
-  margin-top: 2rem;
+.Con-description span {
+  color: #ffffff;
+  font-weight: 500;
 }
 
-.contact .social-media a {
+.Con-availability {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: 0.2rem solid var(--main-color);
-  border-radius: 50%;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: #4ade80;
+  padding: 0.8rem 1.5rem;
+  background: rgba(74, 222, 128, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.Con-availability i {
   font-size: 2rem;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
+}
+
+.Con-form {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Con-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.Con-form-group input,
+.Con-form-group textarea {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  background: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.Con-form-group input::placeholder,
+.Con-form-group textarea::placeholder {
+  color: #ffffff66;
+}
+
+.Con-form-group input:focus,
+.Con-form-group textarea:focus {
+  border-color: #ffffff;
+  background: #ffffff14;
+  box-shadow: 0 0 1rem #e2e2e21a;
+}
+
+.Con-form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.Con-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 3rem;
+  background: #ffffff;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.Con-submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 2rem #e2e2da80;
+}
+
+.Con-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.Con-submit-btn i {
+  font-size: 2rem;
+}
+
+.Con-divider {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.Con-divider::before,
+.Con-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffffff1a, transparent);
+}
+
+.Con-divider span {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Con-social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.Con-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  font-size: 2.4rem;
+  color: #ffffff;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Con-social-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   transition: 0.5s ease;
 }
 
-.contact .social-media a:hover {
-  background: var(--main-color);
-  color: var(--second-bg-color);
-  box-shadow: 0 0 1rem var(--main-color);
+.Con-social-item:hover::before {
+  left: 100%;
+}
+
+.Con-social-item:hover {
+  background: #eeeeee;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 2rem rgba(230, 226, 15, 0.3);
+  border-color: #eeeeee;
+}
+
+.Con-social-item:hover i {
+  color: #0a0a0a;
+}
+
+.Con-social-item:active {
+  transform: scale(0.95);
+}
+
+.Con-social-item i {
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .Con-contact {
+    padding: 8rem 6% 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .Con-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .Con-heading {
+    font-size: 4rem;
+  }
+  
+  .Con-contact {
+    padding: 8rem 5% 3rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .contact {
+  .Con-contact {
+    padding: 6rem 4% 2.5rem;
     min-height: auto;
+  }
+  
+  .Con-heading {
+    font-size: 3.5rem;
+  }
+  
+  .Con-text {
+    padding: 1.5rem;
+  }
+  
+  .Con-subtitle {
+    font-size: 2rem;
+  }
+  
+  .Con-description {
+    font-size: 1.6rem;
+  }
+  
+  .Con-form {
+    padding: 1.5rem;
+  }
+  
+  .Con-form-group input,
+  .Con-form-group textarea {
+    padding: 1rem 1.2rem;
+    font-size: 1.4rem;
+  }
+  
+  .Con-submit-btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+  
+  .Con-social-item {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+  
+  .Con-social-grid {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Con-contact {
+    padding: 5rem 3% 2rem;
+  }
+  
+  .Con-heading {
+    font-size: 3rem;
+  }
+  
+  .Con-content {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .Con-text {
+    padding: 1.2rem;
+  }
+  
+  .Con-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Con-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Con-availability {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .Con-availability i {
+    font-size: 1.6rem;
+  }
+  
+  .Con-form {
+    padding: 1.2rem;
+  }
+  
+  .Con-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .Con-form-group input,
+  .Con-form-group textarea {
+    padding: 0.8rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+  }
+  
+  .Con-form-group textarea {
+    min-height: 80px;
+  }
+  
+  .Con-submit-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+  }
+  
+  .Con-submit-btn i {
+    font-size: 1.6rem;
+  }
+  
+  .Con-divider {
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .Con-divider span {
+    font-size: 1.2rem;
+  }
+  
+  .Con-social-grid {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .Con-social-item {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    border-width: 0.15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .Con-contact {
+    padding: 4rem 2.5% 1.5rem;
+  }
+  
+  .Con-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Con-text {
+    padding: 1rem;
+  }
+  
+  .Con-subtitle {
+    font-size: 1.6rem;
+  }
+  
+  .Con-description {
+    font-size: 1.3rem;
+  }
+  
+  .Con-form {
+    padding: 1rem;
+  }
+  
+  .Con-form-group input,
+  .Con-form-group textarea {
+    padding: 0.7rem 0.8rem;
+    font-size: 1.2rem;
+  }
+  
+  .Con-submit-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .Con-social-item {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+  }
+  
+  .Con-social-grid {
+    gap: 0.8rem;
   }
 }

@@ -1,6 +1,6 @@
 .Ser-services {
   padding: 8rem 10% 6rem;
-  background: #000000ba ;
+  background: #0e0e0e ;
   position: relative;
   overflow: hidden;
 }
@@ -304,7 +304,7 @@
 
 .Ser-tech-slider-track .Ser-tech-item:hover span {
   opacity: 1;
-  color: #e6e20f;
+  color: #ffffff;
 }
 
 .Ser-tech-slider-track i {
