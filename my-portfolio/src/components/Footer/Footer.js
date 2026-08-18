@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-text">
-        <p>Copyright &copy; {currentYear} | Avish Madushanka</p>
+        <p>Copyright &copy; {currentYear} | Avish Madhushanka</p>
       </div>
       <div className="footer-iconTop">
         <a href="#home" aria-label="Back to top">
