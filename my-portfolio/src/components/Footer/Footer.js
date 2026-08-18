@@ -2,13 +2,17 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="footer">
       <div className="footer-text">
-        <p>Copyright &copy; 2023 | Avish Madushanka</p>
+        <p>Copyright &copy; {currentYear} | Avish Madushanka</p>
       </div>
       <div className="footer-iconTop">
-        <a href="#home"><i className='bx bxs-up-arrow-alt'></i></a>
+        <a href="#home" aria-label="Back to top">
+          <i className='bx bxs-up-arrow-alt'></i>
+        </a>
       </div>
     </footer>
   );
